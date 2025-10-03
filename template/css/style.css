@@ -52,7 +52,6 @@ html {
     line-height: 1.15;
 }
 body {
-    color: var(--secondary);
     overflow-x: hidden
 }
 h1,
@@ -98,10 +97,10 @@ h6 {
 }
 
 .header {
-    position: fixed;
+    position: sticky;
     top: 0;
     height: 100px;
-    width: 100%;
+    width: 100vw;
     background: var(--primary);
     color: #fff;
 }
@@ -137,12 +136,16 @@ h6 {
     text-decoration: none;
 }
 
+.header-sm-nav .active {
+    color: var(--secondary);
+}
+
 .header-sm-nav a:hover {
     color: var(--secondary);
 }
 .gutters { 
-    padding-left: 5vw;
-    padding-right: 5vw;
+    padding-left: 8vw;
+    padding-right: 8vw;
 }
 
 .super-gutters { 
@@ -196,7 +199,7 @@ h6 {
     color: var(--gray-dark);
     text-decoration: none;
     text-align: center;
-    line-height: 1.8;
+    line-height: 1.7;
 } 
 
 .header-lg-nav a:hover {
@@ -258,6 +261,54 @@ h6 {
 .logo{
     width:78px;
 }
+
+.hero-wrapper {
+    min-height: 85vh;
+    width: 100vw;
+    background-image: url("../images/bgs/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hero-logo-wrapper {
+    display: flex;
+justify-content: center;
+}
+
+.hero-logo {
+    margin: max(-10vw, -100px) auto 0px auto;
+    max-height: 240px;
+    max-width: 240px;
+    height: 22vw;
+    width: 22vw;
+    min-width: 120px;
+    min-height: 120px;
+}
+
+.gradient-wrapper {
+     background: linear-gradient(to right, 
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.2));
+        min-height: 85vh;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        min-height: 85vh;
+        display: flex;
+        align-items: center;
+}
+
+.hero-wrapper .tagline {
+    color: white;
+    font-size: larger;
+    font-family: serif;
+    max-width: 40vw;
+}
+.hero-wrapper .h1-part-2 {
+    color: var(--secondary);
+}
 .social-list a {
     width: 32px;
     height: 32px;
@@ -272,11 +323,6 @@ h6 {
 .social-list a:hover {
     color: var(--secondary);
     background-color: rgba(255, 255, 255, 0.8)
-}
-
-.main-wrapper {
-    margin-left: var(--sidebar-width);
-    background: #fff;
 }
 
 .main-wrapper .container {
