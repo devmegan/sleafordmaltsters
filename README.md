@@ -1,10 +1,7 @@
-# Blog Site Template
-This is a free blog site template based on Bootstrap 4.
+# Sleaford Maltsters 
 
-It has a left sidebar and is customizable via CSS variables (custom properties)
-
-Watch the entire creation of this template on scrimba here: or see the conversion of this tempalte to a WordPress theme here: 
-
+Run server:
+`php -S 0.0.0.0:8080`
 
 ## Versions
 * 1.0
