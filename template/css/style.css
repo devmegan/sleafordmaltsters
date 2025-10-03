@@ -18,7 +18,7 @@ Author: Megan Macrae
     --white: #fff;
     --gray: #767575;
     --gray-dark: #434242;
-    --primary: #85170f;
+    --primary: #88150d;
     --secondary: #ffc107;
     --success: #28a745;
     --info: #17a2b8;
@@ -54,9 +54,6 @@ html {
 body {
     color: var(--secondary);
     overflow-x: hidden
-}
-a{
-    color: var(--pink);
 }
 h1,
 h2,
@@ -123,6 +120,26 @@ h6 {
     color: var(--dark);
     font-weight: 500;
 }
+
+.header-sm-nav {
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.header-sm-nav button {
+    margin-top: 10px;
+}
+.header-sm-nav a {
+    color: white;
+    font-weight: 500;
+    padding-top: 10px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.header-sm-nav a:hover {
+    color: var(--secondary);
+}
 .gutters { 
     padding-left: 5vw;
     padding-right: 5vw;
@@ -166,7 +183,14 @@ h6 {
    background-color: var(--secondary);
 } 
 
-.header-lg-nav a {
+.header-lg-nav ul {
+     list-style-type: none;
+}
+
+.header-lg-nav ul li {
+    display: inline;
+}
+.header-lg-nav ul li a {
     margin-top: 2px;
     padding: 3px 6px 3px 12px;
     color: var(--gray-dark);
@@ -192,19 +216,23 @@ h6 {
     padding: 2rem 1rem
 }
 
-.header .navbar-dark .navbar-toggler {
+.header .navbar-toggler {
     border: none;
     padding: .25rem .6rem
 }
 
-.header .navbar-dark .navbar-toggler:hover {
+.header .navbar-toggler:hover {
     -webkit-opacity: 1;
     -moz-opacity: 1;
     opacity: 1
 }
 
-.header .navbar-dark .navbar-toggler-icon {
+.header  .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(256,256,256, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.header  .navbar-toggler-icon:hover {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,193,7,1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 .header .nav-item {
@@ -462,7 +490,7 @@ h6 {
     }
 
     .header .navbar {
-        padding: 1rem
+        padding: 0px;
     }
 
     .main-wrapper {
