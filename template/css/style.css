@@ -1,3 +1,9 @@
+/* 
+Theme Name: Sleaford Maltsters
+Text Domain: Sleaford Maltsters
+Version: 1.0
+Author: Megan Macrae
+*/
 :root {
     --blue: #007bff;
     --indigo: #6610f2;
@@ -12,8 +18,8 @@
     --white: #fff;
     --gray: #767575;
     --gray-dark: #434242;
-    --primary: #6f42c1;
-    --secondary: #4f4f4f;
+    --primary: #85170f;
+    --secondary: #ffc107;
     --success: #28a745;
     --info: #17a2b8;
     --warning: #ffc107;
@@ -96,13 +102,38 @@ h6 {
 
 .header {
     position: fixed;
-    left: 0;
     top: 0;
-    height: 100vh;
-    width: var(--sidebar-width);
+    height: 100px;
+    width: 100%;
     background: var(--primary);
-    color: #fff
+    color: #fff;
 }
+
+.header-lg-content {
+     height: 90px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
+
+.header-lg-nav {
+    background-color: white;
+    color: var(--dark);
+    font-weight: 500;
+}
+.gutters { 
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.super-gutters { 
+    padding-left: 15vw;
+    padding-right: 15vw;
+}
+
+
 .header .site-title {
     color:var(--white);
     font-size:1.2em;
@@ -114,6 +145,42 @@ h6 {
     border-color: transparent;
     font-size: 1rem;
     padding-top: 0.5rem
+}
+
+.header .btn-cta {
+    background-color: var(--secondary);
+     border-color: transparent;
+    font-size: 1rem;
+    padding-top: 0.5rem;
+    opacity: 95%;
+}
+
+.header .btn-cta:hover {
+    background: var(--secondary);
+    opacity: 100%;
+    border-color: transparent;
+    font-size: 1.02rem;
+}
+
+.header-lg-nav .active {
+   background-color: var(--secondary);
+} 
+
+.header-lg-nav a {
+    margin-top: 2px;
+    padding: 3px 6px 3px 12px;
+    color: var(--gray-dark);
+    text-decoration: none;
+    text-align: center;
+    line-height: 1.8;
+} 
+
+.header-lg-nav a:hover {
+    background-color: var(--secondary);
+} 
+
+.rounded-btn {
+    border-radius: 5px;
 }
 
 .header .btn-primary:hover {
@@ -380,7 +447,7 @@ h6 {
         height: auto
     }
 
-    .header .site-title {
+    /* .header .site-title {
         width: 100%;
         position: absolute;
         left: 0;
@@ -388,7 +455,7 @@ h6 {
         color:var(--white);
         font-size:1.5em;
         display:block;
-    }
+    } */
 
     .header .btn-primary {
         width: 100%
