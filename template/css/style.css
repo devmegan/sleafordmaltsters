@@ -273,11 +273,11 @@ h6 {
 
 .hero-logo-wrapper {
     display: flex;
-justify-content: center;
+    justify-content: center;
 }
 
 .hero-logo {
-    margin: max(-10vw, -100px) auto 0px auto;
+    margin: max(-11vw, -120px) auto 0px auto;
     max-height: 240px;
     max-width: 240px;
     height: 22vw;
