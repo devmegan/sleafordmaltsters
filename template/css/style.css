@@ -276,6 +276,17 @@ h6 {
     justify-content: center;
 }
 
+section h1 {
+    color: var(--primary);
+    font-size: 2rem;
+}
+
+section a {
+    color: var(--primary);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
 .hero-logo {
     margin: max(-11vw, -120px) auto 0px auto;
     max-height: 240px;
