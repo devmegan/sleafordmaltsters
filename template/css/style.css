@@ -148,11 +148,31 @@ h6 {
     padding-right: 8vw;
 }
 
+.content-gutters {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+
 .super-gutters { 
     padding-left: 15vw;
     padding-right: 15vw;
 }
 
+.card-row {
+    margin: 60px 0px;
+}
+
+.fb-page {
+    background-color: rgb(172, 168, 168);
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 30px;
+    width: 360px;
+    z-index: -10;
+}
 
 .header .site-title {
     color:var(--white);
@@ -167,6 +187,9 @@ h6 {
     padding-top: 0.5rem
 }
 
+.header {
+    z-index: 100;
+}
 .header .btn-cta {
     background-color: var(--secondary);
      border-color: transparent;
