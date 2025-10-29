@@ -165,6 +165,23 @@ h6 {
     margin: 60px 0px;
 }
 
+.card-body .btn-cta {
+    background-color: var(--secondary);
+     border-color: transparent;
+    font-size: 1rem;
+    padding-top: 0.5rem;
+    opacity: 95%;
+    text-decoration: none;
+}
+
+.card-body .btn-cta:hover {
+    background: var(--secondary);
+    opacity: 100%;
+    border-color: transparent;
+    font-size: 1.02rem;
+}
+
+
 .fb-page {
     background-color: rgb(172, 168, 168);
     padding: 10px;
@@ -305,9 +322,13 @@ section h1 {
 }
 
 section a {
-    color: var(--primary);
+    color: var(--dark);
     font-weight: bold;
     text-decoration: underline;
+}
+
+section a:hover {
+    color: var(--primary);
 }
 
 .hero-logo {
