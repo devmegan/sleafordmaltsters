@@ -165,7 +165,7 @@ h6 {
     margin: 60px 0px;
 }
 
-.card-body .btn-cta {
+.card-footer .btn-cta {
     background-color: var(--secondary);
      border-color: transparent;
     font-size: 1rem;
@@ -174,7 +174,16 @@ h6 {
     text-decoration: none;
 }
 
-.card-body .btn-cta:hover {
+.card { 
+    height: 100%;
+}
+
+.card-footer { 
+   border: none;
+   background-color: var(--white);
+}
+
+.card-footer .btn-cta:hover {
     background: var(--secondary);
     opacity: 100%;
     border-color: transparent;
